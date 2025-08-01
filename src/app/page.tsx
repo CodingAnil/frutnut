@@ -48,13 +48,13 @@ const LoadingSpinner = () => (
   <div className="flex justify-center items-center p-8">
     <div className="loading-spinner"></div>
   </div>
-);                                                                         
+);
 
 export default function HomePage() {
   const [products, setProducts] = useState<any>(null);
   const [combos, setCombos] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);                                                                         
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Simulate loading state for better UX
@@ -318,7 +318,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.95 }}
                 aria-label="View all our products"
               >
-                <span>View Menu & Combos</span>
+                <span>View All Products</span>
                 <FaArrowRight size={16} aria-hidden="true" />
               </motion.button>
             </Link>
