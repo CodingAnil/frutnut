@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export for better Vercel compatibility
-  // output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: false,
@@ -12,7 +10,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  // Disable server-side features for static export
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -59,8 +59,8 @@ export default function HomePage() {
   useEffect(() => {
     // Simulate loading state for better UX
     const timer = setTimeout(() => {
-      setProducts(productsData);
-      setCombos(combosData);
+    setProducts(productsData);
+    setCombos(combosData);
       setIsLoading(false);
     }, 100);
 
@@ -296,7 +296,7 @@ export default function HomePage() {
                 return (
                   <motion.div key={category} variants={itemVariants}>
                     <Suspense fallback={<LoadingSpinner />}>
-                      <ProductCard product={product} category={category} />
+                    <ProductCard product={product} category={category} />
                     </Suspense>
                   </motion.div>
                 );
@@ -355,7 +355,7 @@ export default function HomePage() {
               {combos.combos.map((combo: any, index: number) => (
                 <motion.div key={combo.id} variants={itemVariants}>
                   <Suspense fallback={<LoadingSpinner />}>
-                    <ComboCard combo={combo} />
+                  <ComboCard combo={combo} />
                   </Suspense>
                 </motion.div>
               ))}
