@@ -1,0 +1,45 @@
+{
+  "combos": [
+    {
+      "id": "combo1",
+      "name": "30 Days Combo - Mix Fruits + Sprouts",
+      "description": "Perfect combination of fresh mix fruits and healthy sprouts for 30 days",
+      "image": "/images/combo-mix-sprouts.jpg",
+      "price": 2499,
+      "duration": "30 days",
+      "includes": [
+        "200GM MIX FRUITS",
+        "SPROUTS (Moong & Channa)"
+      ],
+      "benefits": [
+        "Daily dose of vitamins and minerals",
+        "High protein content from sprouts",
+        "Supports weight management",
+        "Improves overall health"
+      ],
+      "delivery": "Free delivery included",
+      "customization": "Available as per demand"
+    },
+    {
+      "id": "combo2",
+      "name": "Premium Combo - Dry Fruits + Mix Fruits + Sprouts",
+      "description": "Ultimate health package with premium dry fruits, fresh fruits, and sprouts",
+      "image": "/images/combo-premium.jpg",
+      "price": 5999,
+      "duration": "30 days",
+      "includes": [
+        "ALMONDS, KISMIS, KAJU, WALNUT (200GM)",
+        "MIX FRUITS",
+        "SPROUTS (Moong & Channa)"
+      ],
+      "benefits": [
+        "Premium dry fruits for brain health",
+        "Fresh fruits for vitamins",
+        "Sprouts for protein",
+        "Complete nutrition package"
+      ],
+      "delivery": "Free delivery included",
+      "customization": "Available as per demand"
+    }
+  ]
+} 

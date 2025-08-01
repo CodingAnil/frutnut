@@ -1,0 +1,28 @@
+{ "backgroundImages": [
+  {
+    "src": "/images/julia-zolotova-M_xIaxQE3Ms-unsplash.webp",
+    "alt": "Fresh fruits and vegetables display",
+    "priority": true
+  },
+  {
+    "src": "/images/pexels-solodsha-8605817.webp",
+    "alt": "Healthy food preparation",
+    "priority": false
+  },
+  {
+    "src": "/images/pexels-jeshoots-4972.webp",
+    "alt": "Colorful fruit basket",
+    "priority": false
+  },
+  {
+    "src": "/images/pexels-david-disponett-1118410-2161650.webp",
+    "alt": "Fresh produce market",
+    "priority": false
+  },
+  {
+    "src": "/images/pexels-mehranb-86649.webp",
+    "alt": "Organic vegetables",
+    "priority": false
+  }
+]
+}

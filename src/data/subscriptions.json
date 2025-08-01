@@ -1,0 +1,50 @@
+{
+  "subscriptions": [
+    {
+      "id": "sub1",
+      "name": "200GM Mix Fruits - 30 Days",
+      "description": "Daily fresh mix fruits for 30 days - perfect for healthy snacking",
+      "image": "/images/subscription-200gm.jpg",
+      "price": 1499,
+      "duration": "30 days",
+      "quantity": "200GM",
+      "type": "Mix Fruits",
+      "benefits": [
+        "Daily fresh fruits delivery",
+        "Variety of seasonal fruits",
+        "Rich in vitamins and antioxidants",
+        "Supports immune system"
+      ],
+      "features": [
+        "Free delivery",
+        "Customizable timing",
+        "Fresh daily preparation",
+        "Quality guarantee"
+      ],
+      "whatsappMessage": "Hi! I'm interested in the 200GM Mix Fruits 30-day subscription for ₹1499. Can you provide more details?"
+    },
+    {
+      "id": "sub2",
+      "name": "400GM Mix Fruits - 30 Days",
+      "description": "Larger portion of fresh mix fruits for 30 days - ideal for families",
+      "image": "/images/subscription-400gm.jpg",
+      "price": 2599,
+      "duration": "30 days",
+      "quantity": "400GM",
+      "type": "Mix Fruits",
+      "benefits": [
+        "Larger portions for families",
+        "Daily fresh fruits delivery",
+        "Better value for money",
+        "Perfect for sharing"
+      ],
+      "features": [
+        "Free delivery",
+        "Customizable timing",
+        "Fresh daily preparation",
+        "Quality guarantee"
+      ],
+      "whatsappMessage": "Hi! I'm interested in the 400GM Mix Fruits 30-day subscription for ₹2599. Can you provide more details?"
+    }
+  ]
+} 

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://frutnut.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /menu
+Allow: /combos
+Allow: /subscribe
+Allow: /about
+Allow: /contact
+
+# Crawl delay
+Crawl-delay: 1 

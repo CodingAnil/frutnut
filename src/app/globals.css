@@ -1,26 +1,247 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --yellow: #FBC02D;
+  --orange: #FFA000;
+  --red: #D32F2F;
+  --green: #388E3C;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: #111827;
+    background-color: white;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--red), var(--orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Custom button styles */
+  .btn-primary {
+    background: linear-gradient(to right, #ef4444, #f97316);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    transform: scale(1);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, #dc2626, #ea580c);
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(to right, #fbbf24, #f97316);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    transform: scale(1);
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(to right, #f59e0b, #ea580c);
+    transform: scale(1.05);
+  }
+  
+  .btn-outline {
+    border: 2px solid #ef4444;
+    color: #ef4444;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    transition: all 0.3s;
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.5rem);
+  }
+  
+  /* Section backgrounds */
+  .section-gradient {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+  }
+  
+  .section-gradient-alt {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  }
+  
+  /* Animation classes */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+  
+  .bounce-in {
+    animation: bounceIn 0.8s ease-out;
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Sticky order button for mobile */
+  .sticky-order-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 40;
+  }
+  
+  @media (min-width: 768px) {
+    .sticky-order-btn {
+      display: none;
+    }
+  }
+  
+  /* Loading spinner */
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-bottom: 2px solid #ef4444;
+  }
+  
+  /* Custom focus styles */
+  .focus-ring {
+    outline: none;
+  }
+  
+  .focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ef4444, 0 0 0 4px white;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+  
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+  
+  .backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+  }
 }

@@ -1,0 +1,136 @@
+{
+  "mixFruits": [
+    {
+      "id": "mf1",
+      "name": "Mix Fruits",
+      "description": "Fresh assortment of seasonal fruits including kiwi, berries, orange segments, and grapes",
+      "image": "/images/mix-fruits.jpg",
+      "quantities": [
+        {
+          "amount": "200gm",
+          "price": 60
+        },
+        {
+          "amount": "400gm",
+          "price": 120
+        }
+      ],
+      "healthBenefits": [
+        "Rich in vitamins and antioxidants",
+        "Boosts immune system",
+        "Natural energy source",
+        "Supports digestive health"
+      ],
+      "nutrition": {
+        "calories": "80-120 kcal",
+        "fiber": "3-5g",
+        "vitaminC": "High",
+        "antioxidants": "Rich"
+      }
+    }
+  ],
+  "sprouts": [
+    {
+      "id": "sp1",
+      "name": "Sprouts (Moong & Channa)",
+      "description": "Fresh green sprouts with chopped vegetables, onions, tomatoes, and cilantro",
+      "image": "/images/sprouts.jpg",
+      "quantities": [
+        {
+          "amount": "200gm",
+          "price": 40,
+          "note": "Moong & channa"
+        }
+      ],
+      "healthBenefits": [
+        "High protein content",
+        "Rich in enzymes",
+        "Supports weight loss",
+        "Improves digestion"
+      ],
+      "nutrition": {
+        "calories": "60-80 kcal",
+        "protein": "8-10g",
+        "fiber": "4-6g",
+        "vitamins": "B-complex"
+      }
+    }
+  ],
+  "boiledItems": [
+    {
+      "id": "bi1",
+      "name": "Boiled Egg",
+      "description": "Freshly boiled egg served with green chutney",
+      "image": "/images/boiled-egg.jpg",
+      "quantities": [
+        {
+          "amount": "1 Pcs",
+          "price": 12
+        }
+      ],
+      "healthBenefits": [
+        "Complete protein source",
+        "Rich in essential amino acids",
+        "Supports muscle building",
+        "Good for brain health"
+      ],
+      "nutrition": {
+        "calories": "70-80 kcal",
+        "protein": "6-7g",
+        "fat": "5-6g",
+        "vitamins": "A, D, B12"
+      }
+    },
+    {
+      "id": "bi2",
+      "name": "Boiled Potato",
+      "description": "Freshly boiled potato cubes served with green chutney",
+      "image": "/images/boiled-potato.jpg",
+      "quantities": [
+        {
+          "amount": "250gm",
+          "price": 30
+        }
+      ],
+      "healthBenefits": [
+        "Good source of complex carbohydrates",
+        "Rich in potassium",
+        "Supports heart health",
+        "Provides sustained energy"
+      ],
+      "nutrition": {
+        "calories": "200-250 kcal",
+        "carbs": "45-50g",
+        "fiber": "4-5g",
+        "potassium": "High"
+      }
+    }
+  ],
+  "dryFruits": [
+    {
+      "id": "df1",
+      "name": "Dry Fruits + Mix Fruits",
+      "description": "Premium mix of almonds, kismis (raisins), kaju (cashews), walnuts with fresh fruits",
+      "image": "/images/dry-fruits-mix.jpg",
+      "quantities": [
+        {
+          "amount": "200gm",
+          "price": 229,
+          "note": "Almonds, Kismis, Kaju, Walnut Mix FRUITS"
+        }
+      ],
+      "healthBenefits": [
+        "Rich in healthy fats and proteins",
+        "Excellent source of antioxidants",
+        "Supports brain health",
+        "Boosts energy levels"
+      ],
+      "nutrition": {
+        "calories": "300-400 kcal",
+        "protein": "8-12g",
+        "healthyFats": "20-25g",
+        "antioxidants": "Very High"
+      }
+    }
+  ]
+} 
