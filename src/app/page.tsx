@@ -48,19 +48,19 @@ const LoadingSpinner = () => (
   <div className="flex justify-center items-center p-8">
     <div className="loading-spinner"></div>
   </div>
-);
+);                                                                         
 
 export default function HomePage() {
   const [products, setProducts] = useState<any>(null);
   const [combos, setCombos] = useState<any>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);                                                                         
 
   useEffect(() => {
     // Simulate loading state for better UX
     const timer = setTimeout(() => {
-    setProducts(productsData);
-    setCombos(combosData);
+      setProducts(productsData);
+      setCombos(combosData);
       setIsLoading(false);
     }, 100);
 
@@ -296,7 +296,7 @@ export default function HomePage() {
                 return (
                   <motion.div key={category} variants={itemVariants}>
                     <Suspense fallback={<LoadingSpinner />}>
-                    <ProductCard product={product} category={category} />
+                      <ProductCard product={product} category={category} />
                     </Suspense>
                   </motion.div>
                 );
@@ -318,7 +318,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.95 }}
                 aria-label="View all our products"
               >
-                <span>View All Products</span>
+                <span>View Menu & Combos</span>
                 <FaArrowRight size={16} aria-hidden="true" />
               </motion.button>
             </Link>
@@ -355,7 +355,7 @@ export default function HomePage() {
               {combos.combos.map((combo: any, index: number) => (
                 <motion.div key={combo.id} variants={itemVariants}>
                   <Suspense fallback={<LoadingSpinner />}>
-                  <ComboCard combo={combo} />
+                    <ComboCard combo={combo} />
                   </Suspense>
                 </motion.div>
               ))}

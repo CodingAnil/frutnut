@@ -8,6 +8,8 @@ yarn-error.log*
 .next/
 out/
 build/
+.vercel/
+package-lock.json
 
 # Production
 /build
